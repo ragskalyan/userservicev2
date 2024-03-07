@@ -1,0 +1,27 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      docker: 18
+  pre_build:
+    commands:
+      - echo Logging in to Amazon ECR...
+      - aws --version
+      - $(aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION)
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Zipping specific codes...
+      - zip -r userservice.zip /exceptions /logger /password_generation /user_management cmd.py
+      - echo Codes zipped successfully.
+      - echo Building the Docker image...
+      - docker build -t your-image-name .
+      - echo Docker image built successfully.
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Pushing the Docker image to Amazon ECR...
+      - docker tag your-image-name:latest $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/ragskalyan/userservice:latest
+      - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/ragskalyan/userservice:latest
+      - echo Docker image pushed successfully to Amazon ECR.
