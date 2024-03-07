@@ -2,5 +2,6 @@
 /shelf/
 /workspace.xml
 *.log
-venv
+/venv/
 .idea
+/logs/
