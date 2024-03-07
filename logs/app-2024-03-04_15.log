@@ -1,0 +1,22 @@
+2024-03-04 15:42:56,348 - INFO - Validation Started
+2024-03-04 15:42:56,348 - ERROR - Password should contain a minimum of 12 characters
+2024-03-04 15:42:56,348 - ERROR - Password should contain a minimum of 12 characters
+2024-03-04 15:42:56,348 - ERROR - Password does not meet with the policy
+2024-03-04 15:42:56,348 - ERROR - Password does not meet with the policy
+2024-03-04 15:48:20,086 - INFO - Validation Started
+2024-03-04 15:48:20,086 - ERROR - Password should contain a minimum of 12 characters
+2024-03-04 15:48:20,086 - ERROR - Password should contain a minimum of 12 characters
+2024-03-04 15:48:20,086 - ERROR - Password does not meet the policy
+2024-03-04 15:48:20,086 - ERROR - Password does not meet the policy
+2024-03-04 15:56:31,421 - INFO - Validation Started
+2024-03-04 15:56:31,421 - ERROR - Password should contain a minimum of 12 characters
+2024-03-04 15:56:31,421 - ERROR - Password should contain a minimum of 12 characters
+2024-03-04 15:56:31,421 - ERROR - Password does not meet the policy
+2024-03-04 15:56:31,421 - ERROR - Password does not meet the policy
+2024-03-04 15:56:31,421 - ERROR - Failed to create user
+2024-03-04 15:57:14,815 - INFO - Validation Started
+2024-03-04 15:57:14,815 - INFO - Validation Completed
+2024-03-04 15:57:14,815 - INFO - Encryption Started
+2024-03-04 15:57:14,816 - INFO - Encryption Completed
+2024-03-04 15:57:14,816 - INFO - User created successfully
+2024-03-04 15:57:14,816 - INFO - {'first_name': 'kalyan', 'second_name': 'chandramohan', 'password': '922b79292563087166e3b01b35a14b71bbe92147449d087c9f84f60a40edde5b', 'mobile_number': '9600234875', 'email_id': 'ragskalyan@gmail.com'}
