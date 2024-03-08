@@ -32,7 +32,10 @@ if __name__ == "__main__":
     user_info = create_user(args)
 
     if user_info:
+        print("User created successfully")
+        print(user_info)
         log_info("User created successfully")
         log_info(user_info)
     else:
+        print("Failed to create user")
         log_error("Failed to create user")
